@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Survey</h1>
+        <div id="gender-container" class="gender-container">
+            <h2>Select Gender</h2>
+            <div id="gender-options" class="options">
+                <button class="option" onclick="selectGender('male')">Male</button>
+                <button class="option" onclick="selectGender('female')">Female</button>
+                <button class="option" onclick="selectGender('other')">Other</button>
+            </div>
+        </div>
+        <div id="question-container" class="question-container" style="display: none;">
+            <h2 id="question" class="question">Question 1: What is your favorite color?</h2>
+            <div id="options" class="options">
+                <button class="option" onclick="nextQuestion(1)">Option 1</button>
+                <button class="option" onclick="nextQuestion(2)">Option 2</button>
+                <button class="option" onclick="nextQuestion(3)">Option 3</button>
+                <button class="option" onclick="nextQuestion(4)">Option 4</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
